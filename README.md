@@ -20,6 +20,7 @@ Option | 	Description
 ## Troubleshooting
 
 If you've built a database following https://github.com/pauline-ng/SIFT4G_Create_Genomic_DB, make sure there are non-empty <chrom>.gz and <chrom>regions files
+
 Find list of supported databases here: https://sift.bii.a-star.edu.sg/sift4g/public/
 
 If your database files start with a 'chr', you must rename them without the 'chr' for the annotator to work.
