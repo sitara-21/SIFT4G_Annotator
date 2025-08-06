@@ -2,6 +2,7 @@
 
 To run the SIFT 4G Annotator on Linux or Mac via command line, type the following command into the terminal:
 `java -jar <Path to SIFT4G_Annotator .jar file> -c -i <Path to input vcf file> -d <Path to SIFT4G database directory> -r <Path to your results folder> -t`
+
 *Example:* 
 ```
 java -jar /n/data1/hms/dbmi/gulhan/lab/ankit/scripts/SIFT4G_Annotator/SIFT4G_Annotator.jar -c -i /n/scratch/users/a/ans4371/merged_bams/Haplotypecaller_output/Plt/.HaplotypeCaller/platelet_positive_merged_RG/platelet_positive_RG.g.vcf.gz.final.vcf -d /n/data1/hms/dbmi/gulhan/lab/ankit/misc_files/HybridCTC/SIFT_db/GRCm38.74 -r /n/data1/hms/dbmi/gulhan/lab/ankit/misc_files/HybridCTC/SIFT_output -t
