@@ -1,3 +1,11 @@
+# Cloning the Repository
+
+To clone this repository with all required scripts, run:
+```
+git clone https://github.com/pauline-ng/SIFT4G_Annotator.git
+```
+
+
 # Annotating a VCF file
 
 To run the SIFT 4G Annotator on Linux or Mac via command line, type the following command into the terminal:
