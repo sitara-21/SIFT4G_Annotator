@@ -1,16 +1,11 @@
-# SIFT4G Annotator
-
-Compilation In Eclipse:
-
-1) Open folder SIFT4G_Annotator_code
-2) Compile src/org/siftdna/main/SIFT4G_Main
-3) Create Runnable Jar file
-4) chmod 775 (at least in linux)
-
 # Annotating a VCF file
 
 To run the SIFT 4G Annotator on Linux or Mac via command line, type the following command into the terminal:
-`java -jar <Path to SIFT4G_Annotator> -c -i <Path to input vcf file> -d <Path to SIFT4G database directory> -r <Path to your results folder> -t`
+`java -jar <Path to SIFT4G_Annotator .jar file> -c -i <Path to input vcf file> -d <Path to SIFT4G database directory> -r <Path to your results folder> -t`
+*Example:* 
+```
+java -jar /n/data1/hms/dbmi/gulhan/lab/ankit/scripts/SIFT4G_Annotator/SIFT4G_Annotator.jar -c -i /n/scratch/users/a/ans4371/merged_bams/Haplotypecaller_output/Plt/.HaplotypeCaller/platelet_positive_merged_RG/platelet_positive_RG.g.vcf.gz.final.vcf -d /n/data1/hms/dbmi/gulhan/lab/ankit/misc_files/HybridCTC/SIFT_db/GRCm38.74 -r /n/data1/hms/dbmi/gulhan/lab/ankit/misc_files/HybridCTC/SIFT_output -t
+```
 
 ## Options
 Option | 	Description
@@ -24,6 +19,7 @@ Option | 	Description
 ## Troubleshooting
 
 If you've built a database following https://github.com/pauline-ng/SIFT4G_Create_Genomic_DB, make sure there are non-empty <chrom>.gz and <chrom>regions files
+Find list of supported databases here: https://sift.bii.a-star.edu.sg/sift4g/public/
 
 If your database files start with a 'chr', you must rename them without the 'chr' for the annotator to work.
 
